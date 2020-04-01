@@ -9,7 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./Src/css/style.css">
 
-
+<style>
+.menu-mobiles{
+ display: none;   
+    
+}</style>
 </head>
 <body>
 <!--header-->
@@ -41,8 +45,12 @@
 
        
             <div class="menu mobile item" id="menu">
-                <a href="#menu" id="toggle"><span></span></a>
-                <nav>
+                <a class="menu-toggles" id="toggle">
+                    <span>-</span>
+                    <span>-</span>
+                    <span>-</span>
+                </a>
+                <nav class="menu-mobiles">
                     <ul>
                         <li><a href="#" title="What is CTAP ">What is CTAP </a></li>
                         <li><a href="#" title="What are the Benefits ">What are the Benefits </a></li>
@@ -273,5 +281,11 @@
 
 </body>
 <script src="./Src/js/jqury.js"></script>
-
+<script>
+        $(document).ready(function(){
+          $(".menu-toggles").click(function(){
+            $(".menu-mobiles").toggle();
+          });
+        });
+        </script>
 </html>
