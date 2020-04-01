@@ -1,53 +1,87 @@
 
-@font-face {
-    font-family: 'helveticaneuebold';
-    src: url('../fonts/helvetica_neu_bold-webfont.woff2') format('woff2'),
-         url('../fonts/helvetica_neu_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
+
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueHeavy.eot');
+    src: local('../fonts/HelveticaNeue Heavy'), local('HelveticaNeueHeavy'),
+        url('../fonts/HelveticaNeueHeavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueHeavy.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueHeavy.woff') format('woff'),
+        url('../fonts/HelveticaNeueHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'helveticaneuemedium';
-    src: url('../fonts/helveticaneue_medium-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneue_medium-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueRegular.eot');
+    src: local('../fonts/HelveticaNeue Regular'), local('HelveticaNeueRegular'),
+        url('../fonts/HelveticaNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueRegular.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueRegular.woff') format('woff'),
+        url('../fonts/HelveticaNeueRegular.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'helveticaneueregular';
-    src: url('../fonts/helveticaneue-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneue-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueRegular_1.eot');
+    src: local('../fonts/HelveticaNeue Regular'), local('HelveticaNeueRegular'),
+        url('../fonts/HelveticaNeueRegular_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueRegular_1.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueRegular_1.woff') format('woff'),
+        url('../fonts/HelveticaNeueRegular_1.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'helveticaneueheavy';
-    src: url('../fonts/helveticaneuehv-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneuehv-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueBold.eot');
+    src: local('../fonts/HelveticaNeue Bold'), local('HelveticaNeueBold'),
+        url('../fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueBold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBold.woff') format('woff'),
+        url('../fonts/HelveticaNeueBold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueMedium.eot');
+    src: local('../fonts/HelveticaNeue Medium'), local('HelveticaNeueMedium'),
+        url('../fonts/HelveticaNeueMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueMedium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueMedium.woff') format('woff'),
+        url('../fonts/HelveticaNeueMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 
-body{ font-family: 'helveticaneueheavy';margin: 0;}
+
+
+
+
+
+
+
+body{    font-family: 'HelveticaNeue';margin: 0;}
 .container {max-width: 1170px;margin: 0 auto;padding-left: 15px;padding-right: 15px;box-sizing: border-box;	width: 100%;}
 figure, figarcaption {	margin: 0;}
 ul {padding-left: 0;}
 li{list-style:none;}
 a{text-decoration: none;}
-h1{font-size: 57px; color: #ffffff;}
+h1{font-size: 57px; color: #ffffff;font-weight: 900; line-height: 60px;}
 h2{font-size: 26px; color: #ee3124;}
 h3{font-size: 24px; color: #1e384b;}
 h4{font-size: 18px; color: #273c4e;}
 p{font-size: 18px;color: #1e384b;}
-p span{font-size: 26px; line-height: 36px; color: #273c4e;}
+p span{font-size: 23px; line-height: 36px; color: #273c4e;}
 /**header**/
 header {
 	background-image: url(../images/banerone.jpg);
@@ -82,7 +116,11 @@ header .row .menu_bar .logo figure a img {
 }
 
 header .row .menu_bar .menu {
-	width: 70%;
+    width: 70%;
+    text-align: end;
+}
+header .row .menu_bar .mobile {
+	display: none;
 }
 header .row .menu_bar .menu nav ul li {
 	display: inline;
@@ -90,7 +128,7 @@ header .row .menu_bar .menu nav ul li {
 header .row .menu_bar .menu nav ul li a {
 	color: white;
 	font-size: 17px;
-	padding: 0 7px;position: relative;
+	padding: 0 7px;position: relative;font-weight: 500;
 }
 header .row .menu_bar .menu nav ul li a::after {
 	position: absolute;
@@ -136,6 +174,10 @@ header .row .menu_bar .menu nav ul li a:hover::after {
     display: block;
     text-align: center;
 }
+#secure_network .row .secure-text p {
+	padding-left: 80px;
+	padding-right: 80px;
+}
 #secure_network .secruty_row {
 	width: 100%;
 	display: block;
@@ -150,6 +192,9 @@ header .row .menu_bar .menu nav ul li a:hover::after {
 #secure_network .secruty_row .three_box .risks {
 	text-align: center;
 	width: 32%;
+}
+#secure_network .secruty_row .three_box .risks h2 {
+	font-weight: 500;
 }
 #secure_network .secruty_row .three_box .risks figure img {
 	width: 125px;
@@ -190,11 +235,19 @@ header .row .menu_bar .menu nav ul li a:hover::after {
 	width: 45%;
 	background: #edf4f5;
 	padding-right: 67px;
-    padding-left: 88px;
+    padding-left: 60px;
     padding-top: 20px;
 }
+#ctap .row .two_box .text h4 {
+	font-weight: 800;
+	font-style: normal;
+}
+#ctap .row .two_box .text h4 span {
+	font-weight: 400;
+	font-size: 17px;
+}
 #ctap .row .two_box .ctap_image {
-	width: 50%;
+	width: 50%;height: 355px;
 }
 #ctap .row .two_box .ctap_image figure img {
 	width: 100%;
@@ -373,4 +426,167 @@ footer .social ul li {
 }
 footer .social ul li:hover {
 	opacity: 0.8;
+}
+
+  
+
+
+
+/**************responsive****************/
+
+@media(max-width:1080px){
+
+    header .row .menu_bar .menu nav ul li a {
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width:991px){
+    header .row .menu_bar .menu.desktop {
+        display: none;
+    }
+
+    header .row .menu_bar .mobile {
+        display: block;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 47px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 19px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px;
+    }
+
+
+    p span {
+        font-size: 20px;
+        line-height: 31px;
+    }
+
+
+
+    header {
+        min-height: 470px;
+    }
+    #secure_network .row .secure-text p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #cyber .threat .box .text a {
+        padding: 8px 11px;
+        font-size: 14px;
+    }
+
+    #form {
+        padding-top: 39px;
+        padding-bottom: 20px;
+    }
+    .submit button {
+        padding: 9px 65px;
+        font-size: 15px;
+    }
+
+
+}
+
+
+@media(max-width:767px){
+    #secure_network .secruty_row .three_box {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    #secure_network .secruty_row .three_box .risks {
+        width: 100%;
+    }
+    #secure_network .row .secure-text p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #secure_network .secruty_row {
+        margin-top: 17px;
+    }
+    #ctap .row .two_box {
+        flex-direction: column;   -webkit-flex-direction: column;
+    }
+    #ctap .row .two_box .text {
+        padding-right: 0;
+        padding-left: 28px;
+        padding-top: 1px; width: 100%;
+    }
+    #ctap .row .two_box .ctap_image {
+        width: 100%;
+        height: auto;
+    }
+    #cyber .threat {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    #cyber .threat .box {
+        width: 100%;
+        margin: 11px 0;
+    }
+    #form form {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    #form form .form_group {
+        width: 100%;
+    }
+    #form form .submit {
+        margin-top: 14px;
+    }
+    .submit button {
+        width: 100%;
+        display: block;
+    }
+    footer {
+        margin-top: 10px;
+    }
+    .baner-text {
+        padding-top: 50px;
+    }
+}
+@media(max-width:480px){
+    h1 {
+        font-size: 23px;
+        line-height: 34px;
+        text-align: center;
+    }
+    header {
+        min-height: 390px;
+    }
+    #secure_network::after {
+        display: none;
+    }
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .footer_logo {
+        width: 100%;
+    }
+    footer .social {
+        width: 100%;
+        text-align: center;
+        padding-top: 17px;
+    }
+    #form form .form_group input {
+        padding: 8px 10px;
+    }
+    #cyber .cyber-hading h2 {
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
 }
