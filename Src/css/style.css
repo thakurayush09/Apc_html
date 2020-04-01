@@ -1,0 +1,50 @@
+
+@font-face {
+    font-family: 'helveticaneuebold';
+    src: url('../fonts/helvetica_neu_bold-webfont.woff2') format('woff2'),
+         url('../fonts/helvetica_neu_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helveticaneuemedium';
+    src: url('../fonts/helveticaneue_medium-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helveticaneueregular';
+    src: url('../fonts/helveticaneue-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helveticaneueheavy';
+    src: url('../fonts/helveticaneuehv-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuehv-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{ font-family: 'helveticaneueheavy';}
+.container {max-width: 1170px;margin: 0 auto;padding-left: 15px;padding-right: 15px;box-sizing: border-box;	width: 100%;}
+figure, figarcaption {	margin: 0;}
+ul {padding-left: 0;}
+li{list-style:none;}
+a{text-decoration: none;}
+h1{font-size: 57px; color: #ffffff;}
+h2{font-size: 26px; color: #ee3124;}
+h3{font-size: 24px; color: #1e384b;}
+h4{font-size: 18px; color: #273c4e;}
+p{font-size: 18px;color: #1e384b;}
+p span{font-size: 26px; line-height: 36px; color: #273c4e;}
