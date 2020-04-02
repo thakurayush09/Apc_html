@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueHeavy.eot');
+    src: local('HelveticaNeue Heavy'), local('HelveticaNeueHeavy'),
+        url('HelveticaNeueHeavy.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueHeavy.woff2') format('woff2'),
+        url('HelveticaNeueHeavy.woff') format('woff'),
+        url('HelveticaNeueHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueRegular.eot');
+    src: local('HelveticaNeue Regular'), local('HelveticaNeueRegular'),
+        url('HelveticaNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueRegular.woff2') format('woff2'),
+        url('HelveticaNeueRegular.woff') format('woff'),
+        url('HelveticaNeueRegular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueRegular_1.eot');
+    src: local('HelveticaNeue Regular'), local('HelveticaNeueRegular'),
+        url('HelveticaNeueRegular_1.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueRegular_1.woff2') format('woff2'),
+        url('HelveticaNeueRegular_1.woff') format('woff'),
+        url('HelveticaNeueRegular_1.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueBold.eot');
+    src: local('HelveticaNeue Bold'), local('HelveticaNeueBold'),
+        url('HelveticaNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueBold.woff2') format('woff2'),
+        url('HelveticaNeueBold.woff') format('woff'),
+        url('HelveticaNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueMedium.eot');
+    src: local('HelveticaNeue Medium'), local('HelveticaNeueMedium'),
+        url('HelveticaNeueMedium.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueMedium.woff2') format('woff2'),
+        url('HelveticaNeueMedium.woff') format('woff'),
+        url('HelveticaNeueMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+

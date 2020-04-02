@@ -262,7 +262,8 @@ header .row .menu_bar .menu nav ul li a:hover::after {
 	display: block;
 	overflow: hidden;
 	background: #273c4e;
-	padding-top: 21px;padding-bottom: 20px;
+	padding-top: 35px;
+	padding-bottom: 70px;
 }
 #cyber .cyber-hading {
 	text-align: center;
@@ -304,12 +305,14 @@ header .row .menu_bar .menu nav ul li a:hover::after {
 #cyber .threat .box .text a {
 	background: #E41B13;
 	color: white;
-	padding: 12px 52px;
+	padding: 12px 0;
 	margin-top: 20px;
 	display: block;
 	margin-bottom: 17px;
 	position: relative;
 	z-index: 9;
+	font-size: 20px;
+	width: 100%;
 }
 #cyber .threat .box .text a::after {
 	position: absolute;
@@ -355,16 +358,21 @@ header .row .menu_bar .menu nav ul li a:hover::after {
     display:-webkit-flex;
 	-webkit-flex-direction: column;
 }
+#form form .Comments {
+	width: 96%;
+}
 #form form .form_group label {
-	font-size: 16px;
-	margin-bottom: 9px;
-	margin-top: 8px;
-	color: #273c4e !important;
+	font-size: 18px;
+	margin-bottom: 13px;
+	margin-top: 16px;
+	color: #8597a3 !important;
 }
 #form form .form_group input {
-	background: white;
-	border: solid 1px;
-	padding: 11px 10px;
+	background: #f5efef;
+	border: 0;
+	padding: 14px 10px;
+	margin-bottom: 13px;
+	font-size: 18px;
 }
 #form form  .submit {
 	width: 100%;
@@ -376,10 +384,11 @@ header .row .menu_bar .menu nav ul li a:hover::after {
 	color: white;
 	padding: 13px 65px;
 	border: 0;
-	font-size: 18px;
+	font-size: 24px;
 	cursor: pointer;
 	position: relative;
 	z-index: 99;
+	font-weight: 500;
 }
 #form form  .submit button::after {
 	position: absolute;
@@ -437,6 +446,12 @@ footer .social ul li:hover {
   
 
 
+
+
+.menu-mobiles{
+    display: none;   
+       
+   }
 
 /**************responsive****************/
 
@@ -515,7 +530,6 @@ footer .social ul li:hover {
         padding-right: 40px;
     }
     #cyber .threat .box .text a {
-        padding: 8px 11px;
         font-size: 14px;
     }
 
@@ -586,6 +600,20 @@ footer .social ul li:hover {
     }
     .baner-text {
         padding-top: 50px;
+    }
+
+    #cyber {
+        padding-top: 22px;
+        padding-bottom: 30px;
+    }
+    #form form .form_group label {
+        font-size: 16px;
+        margin-bottom: 6px;
+        margin-top: 0;
+    }
+    #form form .form_group input {
+        padding: 8px 10px;
+        font-size: 16px;
     }
 }
 @media(max-width:480px){
