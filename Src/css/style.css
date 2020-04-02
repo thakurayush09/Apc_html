@@ -214,7 +214,10 @@ header .row .menu_bar .menu nav ul li a:hover::after {
 	transform: rotate(-360deg);
 	transition: all ease-in-out 0.9s;
 }
-
+#secure_network .secruty_row .three_box .risks:hover {
+	box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.09);
+	transition: all ease-in-out 0.4s;
+}
 
 
 
@@ -265,7 +268,7 @@ header .row .menu_bar .menu nav ul li a:hover::after {
 	text-align: center;
 }
 #cyber .cyber-hading h2 {
-	color: white;
+	color: white;font-weight: 500;
 }
 #cyber .threat {
     display: flex;
@@ -319,12 +322,15 @@ header .row .menu_bar .menu nav ul li a:hover::after {
 	right: 0;
 	z-index: -1;
 }
-#cyber .threat .box .text a:hover::after {
+#cyber .threat .box:hover a::after {
 	width: 100%;
-	transition: all ease-in-out 0.5s;
+	transition: all ease-in-out 0.6s;
 }
-
-
+#cyber .threat .box:hover {
+	box-shadow: -1px 1px 9px 0px rgba(255,255,255,0.9);
+    transition: all ease-in-out 0.5s;
+    transform: scale(0.9);
+}
 
 
 #form {
@@ -433,6 +439,9 @@ footer .social ul li:hover {
 
 
 /**************responsive****************/
+
+
+
 
 @media(max-width:1080px){
 
@@ -585,6 +594,10 @@ footer .social ul li:hover {
         line-height: 34px;
         text-align: center;
     }
+
+    .baner-text {
+        padding-top: 105px;
+    }
     header {
         min-height: 390px;
     }
@@ -611,5 +624,19 @@ footer .social ul li:hover {
         margin-top: 0;
         margin-bottom: 0;
     }
-
+    p span {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    #cyber .threat {
+        margin-top: 10px;
+    }
+    #secure_network {
+        margin-top: 0;
+        padding-top: 5px;
+    }
+    #secure_network .row .secure-text p {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
